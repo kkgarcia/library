@@ -1,0 +1,158 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(168, 168, 168);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 100vw;
+    max-width: 2000px;
+}
+
+header {
+    padding: 20px 30px;
+    background-color: rgb(110, 110, 110);
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0px 3px 5px rgb(71, 71, 71);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(210, 210, 210);
+    background-color: rgb(131, 131, 131);
+    color: white;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.add-btn:hover {
+    background-color: rgb(111, 111, 111);
+}
+
+.add-btn:active {
+    top: 2px;
+}
+
+.input-menu {
+    padding: 10px 10px;
+    width: 300px;
+    height: 230px;
+    background-color: rgb(232, 232, 232);
+    position: absolute;
+    top: 80px;
+    border-radius: 6px;
+    display: none;
+    z-index: 5;
+}
+
+.input-menu > div:nth-child(-n + 3) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 2px;
+}
+
+.input-menu > div:nth-child(-n + 3) > input {
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+}
+
+.input-menu > div:nth-child(-n + 3) > input:focus {
+    outline: 1px solid rgb(45, 45, 255);
+}
+
+.input-menu > div:nth-child(4){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-menu > div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+#submit-btn {
+    padding: 5px 20px; 
+    border: none;   
+    background-color: rgb(124, 124, 124);
+    color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+#submit-btn:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+#submit-btn:active{
+    top: 1px;
+}
+
+.card {
+    width: 230px;
+    height: 330px;
+    padding: 20px 0px;
+    color: rgb(228, 228, 228);
+    background: linear-gradient(90deg, rgb(98, 54, 54), rgb(119, 81, 81));
+    box-shadow: 4px 4px 5px rgb(58, 58, 58);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card > button {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0px 10px;
+}
+
+.cards-main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.cards-container {
+    max-width: 840px;
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.delete-btn {
+    background-color: rgb(214, 76, 76);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(182, 64, 64);
+}
